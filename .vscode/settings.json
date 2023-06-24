@@ -1,0 +1,6 @@
+{
+    "appService.preDeployTask": "package:ainvoice-backend",
+    "appService.deploySubpath": "target\\ainvoice-backend.war",
+    "appService.defaultWebAppToDeploy": "/subscriptions/bf9845e4-2ac6-49c5-9f1a-bc67356af189/resourceGroups/synapse/providers/Microsoft.Web/sites/ainvoice-backend",
+    "java.configuration.updateBuildConfiguration": "automatic"
+}

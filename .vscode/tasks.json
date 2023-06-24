@@ -1,0 +1,32 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"command": "mvn",
+			"type": "shell",
+			"group": "build",
+			"args": [
+				"clean",
+				"package"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"label": "package:ainvoice-backend"
+		},
+		{
+			"type": "java (buildArtifact)",
+			"targetPath": "${workspaceFolder}/${workspaceFolderBasename}.jar",
+			"elements": [
+				"${compileOutput}",
+				"${dependencies}"
+			],
+			"problemMatcher": [],
+			"label": "java (buildArtifact): ainvoice-backend",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
